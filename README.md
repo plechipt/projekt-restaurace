@@ -1,1 +1,3 @@
-# projekt-restaurace
+# projekt-kino
+
+https://projekt-kino.netlify.app/

@@ -1,0 +1,47 @@
+.movie-container {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+}
+
+.movie-year-length,
+.movie-plot {
+  font-size: 12px;
+}
+
+.movie-year-length,
+.movie-plot {
+  color: #a5a5a5;
+}
+
+.title {
+  margin-top: 3rem;
+  margin-bottom: 1rem !important;
+  display: flex;
+  justify-content: center;
+}
+
+.trailer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.movie-container img {
+  height: 180px;
+}
+
+.images,
+.image {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.image {
+  margin-bottom: 20px;
+}
+
+.images img {
+  width: 85%;
+}

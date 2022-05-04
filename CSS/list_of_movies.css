@@ -1,0 +1,33 @@
+.container {
+  padding: 1rem 2rem 0rem 2rem;
+}
+
+.movie {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.movie-image {
+  height: 150px;
+}
+
+.movie-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 15px;
+}
+
+.movie-name {
+  font-size: 18px;
+}
+
+.movie-genre,
+.movie-director,
+.movie-actors,
+.movie-date-release {
+  color: #a5a5a5;
+  font-size: 12px;
+}

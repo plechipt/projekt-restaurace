@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&family=Roboto:ital,wght@0,500;1,100;1,700&display=swap");
+
+body,
+html {
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  overflow-x: hidden;
+  background-color: rgb(20, 20, 20);
+}
+
+.top-bar {
+  margin: auto;
+  width: 100%;
+  padding: 1rem 1rem 0.2rem;
+  background-color: #1d1d1d;
+}
+
+.top-bar nav {
+  margin-top: 1.5rem;
+}
+
+.top-bar ul li {
+  display: flex;
+  align-items: center;
+}
+
+.main-logo {
+  width: 125px;
+}
+
+nav ul {
+  padding: 0px;
+  display: flex;
+}
+
+nav ul li {
+  color: white;
+  margin-right: 1.5rem;
+  display: block;
+}
+
+.navbar-item {
+  all: unset;
+}
+
+nav ul li:hover {
+  cursor: pointer;
+  color: #dfa92f;
+}
+
+.container {
+  color: white;
+  margin: auto;
+  width: 40.5%;
+  background-color: #1d1d1d;
+}
+
+.movies {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 100%;
+}
+
+.main-movie img {
+  width: 100%;
+}
+
+.bottom-movies {
+  display: flex;
+  justify-content: center;
+}
+
+.bottom-movie img {
+  width: 100%;
+}
+
+.kontakt {
+  padding: 0rem 2rem 2rem 2rem;
+  margin-top: 5rem;
+}
+
+.contacts {
+  display: flex;
+}
+
+.contact-left-side,
+.contact-right-side {
+  width: 50%;
+  flex: 1;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-left-side {
+  font-size: 14.5px;
+}
+
+.google-map {
+  margin-top: 1.3rem;
+  width: 100%;
+  height: 300px;
+}
+
+.footer {
+  padding: 0rem 2rem 2rem 2rem;
+  margin-top: 5rem;
+}
+
+.footer-container {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-logo {
+  width: 100px;
+}
+
+@media screen and (max-width: 1500px) {
+  .container {
+    width: 51.5%;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .container {
+    width: 59.5%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .container {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    width: 86.5%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .contacts,
+  .footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .google-map {
+    width: 200%;
+    height: 300px;
+  }
+}
