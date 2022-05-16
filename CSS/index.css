@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&family=Roboto:ital,wght@0,500;1,100;1,700&display=swap");
 
+:root {
+  --color-link: hsl(354, 88%, 56%);
+  --color-bg: hsl(196, 63%, 15%);
+  --color-A: hsl(185, 96%, 48%);
+  --hover-color: hsl(0, 89%, 53%);
+  --sub-menu: #bc212e;
+}
+
 body,
 html {
   font-family: "Quicksand", sans-serif;
@@ -31,24 +39,66 @@ html {
   width: 70px;
 }
 
-nav ul {
-  padding: 0px;
-  display: flex;
+nav {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  align-items: start;
 }
 
-nav ul li {
-  color: white;
-  margin-right: 1.5rem;
+.menu-item {
+  text-decoration: none;
+  position: relative;
+}
+
+.menu-item > a {
   display: block;
+  text-align: center;
+  padding: 0.5em 1em;
 }
 
-.navbar-item {
-  all: unset;
+.menu-item > a:hover {
+  color: white;
 }
 
-nav ul li:hover {
+.menu-item:hover {
+  background-color: white;
+  color: black;
+}
+
+.menu-item span {
+  display: block;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding: 0.5em 1em;
   cursor: pointer;
-  color: #dfa92f;
+}
+
+.menu-item a {
+  text-decoration: none;
+  color: white;
+}
+
+.sub-menu {
+  display: none;
+  position: absolute;
+  width: 100%;
+}
+
+.menu-item:hover .sub-menu {
+  display: block;
+  background-color: var(--sub-menu);
+}
+
+.menu-item span:hover,
+.menu-item a:hover {
+  color: black;
+}
+
+.sub-menu a {
+  display: block;
+  text-decoration: none;
+  padding: 0.5em 1em;
 }
 
 .container {
