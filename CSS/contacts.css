@@ -1,0 +1,47 @@
+.kontakt {
+  padding: 0rem 2rem 2rem 2rem;
+}
+
+.kontakt h2 {
+  padding-top: 1em;
+}
+
+.contacts {
+  display: flex;
+}
+
+.contact-left-side,
+.contact-right-side {
+  width: 50%;
+  flex: 1;
+  flex-direction: row;
+  display: flex;
+}
+
+.contact-left-side-items {
+  display: flex;
+  flex-direction: row;
+}
+
+.contact-right-side {
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-left-side {
+  font-size: 14.5px;
+}
+
+.left-side-right {
+  margin-left: 70px;
+}
+
+.opening p,
+.address p,
+.telephone-and-email p {
+  margin-left: 10px;
+}
+
+.telephone-and-email {
+  margin-top: 42px;
+}

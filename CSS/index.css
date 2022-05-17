@@ -116,7 +116,7 @@ nav,
 .container {
   color: white;
   margin: auto;
-  width: 75%;
+  width: 50%;
   background-color: #1d1d1d;
 }
 
@@ -139,29 +139,6 @@ nav,
 
 .bottom-movie img {
   width: 100%;
-}
-
-.kontakt {
-  padding: 0rem 2rem 2rem 2rem;
-  margin-top: 5rem;
-}
-
-.contacts {
-  display: flex;
-}
-
-.contact-left-side,
-.contact-right-side {
-  width: 50%;
-  flex: 1;
-  flex-direction: row;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.contact-left-side {
-  font-size: 14.5px;
 }
 
 .google-map {
