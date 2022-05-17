@@ -26,34 +26,33 @@ html {
   background-color: #1d1d1d;
 }
 
-.top-bar nav {
-  margin-top: 1.5rem;
-}
-
 .top-bar ul li {
   display: flex;
   align-items: center;
 }
 
+.main-logo-container {
+  display: flex;
+  justify-content: center;
+}
+
 .main-logo {
   display: flex;
   justify-content: center;
-  width: 70px;
+  width: 50px;
 }
 
-header {
-  display: grid;
-  grid-template-columns: repeat(1, 10rem);
-  align-items: start;
-}
-
-header a {
-  padding: 0.5em 2em;
+.menu-item a,
+.menu-item span {
+  padding: 0.5em 1em;
 }
 
 nav {
-  display: grid;
-  grid-template-columns: repeat(6, 10rem);
+}
+
+nav,
+.menu-item a {
+  display: flex;
   align-items: start;
 }
 
@@ -65,7 +64,6 @@ nav {
 .menu-item > a {
   display: block;
   text-align: center;
-  padding: 0.5em 1em;
 }
 
 .menu-item > a:hover {
@@ -82,7 +80,6 @@ nav {
   color: white;
   text-decoration: none;
   text-align: center;
-  padding: 0.5em 1em;
   cursor: pointer;
 }
 
@@ -116,7 +113,7 @@ nav {
 .container {
   color: white;
   margin: auto;
-  width: 60%;
+  width: 75%;
   background-color: #1d1d1d;
 }
 
