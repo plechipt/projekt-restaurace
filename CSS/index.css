@@ -22,7 +22,7 @@ html {
 .top-bar {
   margin: auto;
   width: 100%;
-  padding: 1rem 1rem 0.2rem;
+  padding: 0rem 1em 0.1em;
   background-color: #1d1d1d;
 }
 
@@ -31,23 +31,24 @@ html {
   align-items: center;
 }
 
-.main-logo-container {
+.main-logo-container a {
   display: flex;
+  align-items: center;
   justify-content: center;
 }
 
 .main-logo {
-  display: flex;
-  justify-content: center;
+  margin-right: 0.5rem;
   width: 50px;
+}
+
+nav div {
+  padding: 0.5em 0em;
 }
 
 .menu-item a,
 .menu-item span {
-  padding: 0.5em 1em;
-}
-
-nav {
+  padding: 0.5em 2em;
 }
 
 nav,
@@ -91,6 +92,7 @@ nav,
 .sub-menu {
   display: none;
   position: absolute;
+  padding: 1em 0em;
   width: 100%;
 }
 
