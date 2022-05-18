@@ -2,6 +2,20 @@
   padding: 0rem 2rem 2rem 2rem;
 }
 
+.container hr {
+  margin-bottom: 1.5em;
+}
+
 .container h2 {
   padding-top: 1em;
+}
+
+.photos {
+  align-items: center;
+}
+
+.photos img {
+  margin-right: 0.5em;
+  margin-bottom: 0.5em;
+  width: 150px;
 }
