@@ -45,3 +45,9 @@
 .telephone-and-email {
   margin-top: 42px;
 }
+
+.google-map {
+  margin-top: 1.3rem;
+  width: 100%;
+  height: 300px;
+}
