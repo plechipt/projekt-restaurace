@@ -20,6 +20,33 @@ html {
   object-fit: 100px 10px;
 }
 
+.main-container {
+  padding: 0rem 2rem 2rem 2rem;
+}
+
+.container hr {
+  margin-bottom: 1.5em;
+}
+
+.container h1 {
+  text-align: center;
+  padding-top: 0.5em;
+}
+
+.main-container article h2 {
+  margin-bottom: 1.5em;
+}
+
+.menu-day {
+  margin-bottom: 2em;
+}
+
+.menu-day p {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+}
+
 .top-bar {
   margin: auto;
   width: 100%;
@@ -41,6 +68,10 @@ html {
 .main-logo {
   margin-right: 0.5rem;
   width: 50px;
+}
+
+nav {
+  position: sticky;
 }
 
 nav div {
@@ -118,23 +149,6 @@ nav,
   margin: auto;
   width: 50%;
   background-color: #1d1d1d;
-}
-
-.movies {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin: auto;
-  width: 100%;
-}
-
-.main-movie img {
-  width: 100%;
-}
-
-.bottom-movies {
-  display: flex;
-  justify-content: center;
 }
 
 .bottom-movie img {
