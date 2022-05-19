@@ -47,6 +47,16 @@ html {
   font-size: 14.5px;
 }
 
+.divide-line {
+  margin-bottom: 2em !important;
+}
+
+.restaurant-image-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5em;
+}
+
 .top-bar {
   margin: auto;
   width: 100%;
