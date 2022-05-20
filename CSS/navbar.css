@@ -1,0 +1,103 @@
+.icon-menu {
+  margin-left: 1.5em;
+  color: white;
+  cursor: pointer;
+}
+
+.hidden-menu div {
+  display: flex;
+  align-items: center;
+}
+
+.top-bar {
+  margin: auto;
+  width: 100%;
+  padding: 0rem 1.5em 0.1em;
+  background-color: #1d1d1d;
+}
+
+.top-bar ul li {
+  display: flex;
+  align-items: center;
+}
+
+.main-logo-container a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-logo {
+  margin-right: 0.5rem;
+  width: 50px;
+}
+
+nav div {
+  padding: 0.5em 0em;
+}
+
+.menu-item a,
+.menu-item span {
+  padding: 0.5em 2em;
+}
+
+nav,
+.menu-item a {
+  display: flex;
+  align-items: start;
+}
+
+.menu-item {
+  text-decoration: none;
+  position: relative;
+}
+
+.menu-item > a {
+  display: block;
+  text-align: center;
+}
+
+.menu-item > a:hover {
+  color: white;
+}
+
+.menu-item:hover {
+  background-color: white;
+  color: black;
+}
+
+.menu-item span {
+  display: block;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+.menu-item a {
+  text-decoration: none;
+  color: white;
+}
+
+.sub-menu {
+  display: none;
+  position: absolute;
+  padding: 1em 0em;
+  width: 100%;
+}
+
+.menu-item:hover .sub-menu {
+  display: block;
+  background-color: var(--sub-menu);
+}
+
+.menu-item span:hover,
+.menu-item a:hover {
+  color: black;
+}
+
+.sub-menu a {
+  display: block;
+  text-decoration: none;
+  padding: 0.5em 1em;
+}

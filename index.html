@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="CSS/index.css" />
+    <link rel="stylesheet" href="CSS/navbar.css" />
     <link rel="icon" href="./assets/logos/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <script
       src="https://kit.fontawesome.com/6faefb62d4.js"
@@ -18,7 +18,7 @@
     <!-- Main top bar -->
     <div class="top-bar">
       <header></header>
-      <nav>
+      <nav class="shown-menu">
         <div>
           <a href="./index.html">
             <img class="main-logo" src="assets/logos/main-logo.png" alt="" />
@@ -60,6 +60,16 @@
           <div class="menu-item">
             <a class="icon-telephone" href="./kontakty.html">Konktakty</a>
           </div>
+        </div>
+      </nav>
+      <nav class="hidden-menu">
+        <div>
+          <div>
+            <a href="./index.html">
+              <img class="main-logo" src="assets/logos/main-logo.png" alt="" />
+            </a>
+          </div>
+          <div class="icon-menu"></div>
         </div>
       </nav>
     </div>
@@ -269,4 +279,5 @@
       </footer>
     </div>
   </body>
+  <script src="script.js"></script>
 </html>

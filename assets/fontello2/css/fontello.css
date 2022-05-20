@@ -72,9 +72,6 @@
 .icon-telephone:before {
   content: "\e804";
 } /* '' */
-.icon-menu:before {
-  content: "\e808";
-} /* '' */
 .icon-telephone:before,
 .icon-camera:before {
   margin-right: 0.5em;
