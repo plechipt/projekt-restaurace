@@ -11,11 +11,19 @@
 }
 
 .photos {
-  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .photos img {
   margin-right: 0.5em;
   margin-bottom: 0.5em;
   width: 150px;
+}
+
+@media screen and (max-width: 380px) {
+  .photos img {
+    margin-top: 1em;
+  }
 }
