@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&family=Roboto:ital,wght@0,500;1,100;1,700&display=swap");
-@import url(../assets/fontello2/css/fontello.css);
+@import url(../assets/fontello/css/fontello.css);
 
 :root {
   --color-link: hsl(354, 88%, 56%);
@@ -238,6 +238,16 @@ nav,
     width: 100%;
     margin-top: 5.5em !important;
   }
+  .main-container {
+    margin-top: -0.1em;
+  }
+  .menu-item a,
+  .menu-item span {
+    padding: 0.5em 1em;
+  }
+}
+
+@media screen and (max-width: 600px) {
 }
 
 @media screen and (max-width: 550px) {
