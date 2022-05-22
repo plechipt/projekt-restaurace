@@ -1,11 +1,12 @@
 .icon-menu {
-  margin-left: 1.5em;
+  margin-left: 1em;
   color: white;
   cursor: pointer;
 }
 
 .hidden-menu div {
   display: flex;
+  padding: 0rem 0rem 10px 3px;
   align-items: center;
 }
 

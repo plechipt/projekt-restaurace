@@ -1,15 +1,3 @@
-.photo-container {
-  padding: 0rem 2rem 2rem 2rem;
-}
-
-.container hr {
-  margin-bottom: 1.5em;
-}
-
-.container h2 {
-  padding-top: 1em;
-}
-
 .photos {
   display: flex;
   justify-content: center;

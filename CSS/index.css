@@ -1,6 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&family=Roboto:ital,wght@0,500;1,100;1,700&display=swap");
 @import url(../assets/fontello/css/fontello.css);
 
+* {
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
 :root {
   --color-link: hsl(354, 88%, 56%);
   --color-bg: hsl(196, 63%, 15%);
@@ -18,6 +24,14 @@ html {
   overflow-x: hidden;
   background-image: url(../assets/images/main-background.jpg);
   object-fit: 100px 10px;
+}
+
+.container hr {
+  margin-bottom: 1.5em;
+}
+
+.container h2 {
+  padding-top: 1em;
 }
 
 .hidden-menu {
@@ -127,13 +141,19 @@ html {
   }
 }
 
-@media screen and (max-width: 886px) {
+@media screen and (max-width: 896px) {
   .main-logo {
     margin-top: 20%;
   }
 }
 
 @media screen and (max-width: 700px) {
+  .main-logo {
+    margin-top: 0;
+  }
+  .top-bar {
+    padding: 0em;
+  }
   .shown-menu {
     display: none;
   }
