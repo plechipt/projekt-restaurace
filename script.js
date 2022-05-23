@@ -1,9 +1,8 @@
-function showHideMenu() {
-  if (document.getElementById("menu").className == "hide-menu") {
-    document.getElementById("menu").className = "";
-    document.getElementById("container").className = "menu-is-show";
+function toggleMenu() {
+  const x = document.getElementById("menu-links");
+  if (x.style.display === "block") {
+    x.style.display = "none";
   } else {
-    document.getElementById("menu").className = "hide-menu";
-    document.getElementById("container").className = "";
+    x.style.display = "block";
   }
 }

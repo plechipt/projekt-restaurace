@@ -102,3 +102,53 @@ nav,
   text-decoration: none;
   padding: 0.5em 1em;
 }
+
+/* Style the navigation menu */
+.hidden-menu {
+  padding-bottom: 1.5em;
+  overflow: hidden;
+  background-color: #181818;
+  position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.hidden-menu #menu-links {
+  display: none;
+}
+
+/* Style navigation menu links */
+.hidden-menu a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.hidden-menu a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.hidden-menu a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  color: white;
+}
+
+#hidden-main-logo {
+  margin-left: 1.1em;
+}
+
+.menu-links {
+  margin-top: 2em !important;
+}
