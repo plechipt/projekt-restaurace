@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/index.css" />
+    <link rel="stylesheet" href="CSS/navbar.css" />
+    <link rel="stylesheet" href="CSS/menu.css" />
+    <link rel="icon" href="./assets/logos/favicon.ico" />
+
+    <script
+      src="https://kit.fontawesome.com/6faefb62d4.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Banzai</title>
+  </head>
+  <body>
+    <!-- Main top bar -->
+    <div class="top-bar">
+      <header></header>
+      <nav class="shown-menu">
+        <div>
+          <a href="./index.html">
+            <img class="main-logo" src="assets/logos/main-logo.png" alt="" />
+          </a>
+        </div>
+        <div>
+          <div class="menu-item">
+            <span class="icon-food">Menu</span>
+            <div class="sub-menu">
+              <a href="">Předkrmy</a>
+              <a href="">Saláty</a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="menu-item">
+            <span class="icon-ice-cream">Dezerty</span>
+            <div class="sub-menu">
+              <a href="">Předkrmy</a>
+              <a href="">Saláty</a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="menu-item">
+            <span class="icon-soda">Nápoje</span>
+            <div class="sub-menu">
+              <a href="">Předkrmy</a>
+              <a href="">Saláty</a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="menu-item">
+            <a class="icon-camera" href="./fotografie.html">Fotografie</a>
+          </div>
+        </div>
+        <div>
+          <div class="menu-item">
+            <a class="icon-telephone" href="./kontakty.html">Konktakty</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <nav class="hidden-menu">
+      <a href="index.html">
+        <img
+          class="main-logo"
+          id="hidden-main-logo"
+          src="assets/logos/main-logo.png"
+          alt=""
+        />
+      </a>
+      <div id="menu-links">
+        <a class="icon-food" href="menu.html">Menu</a>
+        <a class="icon-ice-cream" href="dezerty.html">Dezerty</a>
+        <a class="icon-soda" href="napoje.html">Nápoje</a>
+        <a class="icon-camera" href="fotografie.html">Fotografie</a>
+        <a class="icon-telephone" href="kontakty.html">Kontakty</a>
+      </div>
+      <a
+        href="javascript:void(0);"
+        class="icon icon-menu"
+        onclick="toggleMenu()"
+      ></a>
+    </nav>
+    <!-- Content container -->
+    <div class="container">
+      <main>
+        <div class="main-container">
+          <h2>Menu</h2>
+          <hr />
+          <div id="content">
+            <aside>
+              <p>Předkrmy</p>
+              <p>Saláty</p>
+              <p>Saláty</p>
+              <p>Saláty</p>
+            </aside>
+            <article>
+              <div class="menu-day">
+                <h3 class="title-first">Pondělí</h3>
+                <p>
+                  <span>
+                    Sakana hiru bento – sakana awase tempura (smažené ryby v
+                    jemném těstíčku s omáčkou tensuyu)
+                  </span>
+                  <span>340 Kč</span>
+                </p>
+                <p>
+                  <span>
+                    Niku hiru bento – buta shougayaki (restované vepřové kousky
+                    nakládané v zázvoru)
+                  </span>
+                  <span>280 Kč</span>
+                </p>
+
+                <p>
+                  <span>
+                    Kombi hiru bento – kombinace sakana awase tempura a buta
+                    shougayaki
+                  </span>
+                  <span>310 Kč</span>
+                </p>
+                <p>
+                  <span>
+                    Vege tófu hiru bento – tófu teriyaki nebo tófu age (tófu s
+                    teriyaki omáčkou nebo smažené tófu)
+                  </span>
+                  <span>270 Kč</span>
+                </p>
+              </div>
+              <div class="menu-day">
+                <h3>Pondělí</h3>
+                <p>
+                  <span>
+                    Sakana hiru bento – sakana awase tempura (smažené ryby v
+                    jemném těstíčku s omáčkou tensuyu)
+                  </span>
+                  <span>340 Kč</span>
+                </p>
+                <p>
+                  <span>
+                    Niku hiru bento – buta shougayaki (restované vepřové kousky
+                    nakládané v zázvoru)
+                  </span>
+                  <span>280 Kč</span>
+                </p>
+
+                <p>
+                  <span>
+                    Kombi hiru bento – kombinace sakana awase tempura a buta
+                    shougayaki
+                  </span>
+                  <span>310 Kč</span>
+                </p>
+                <p>
+                  <span>
+                    Vege tófu hiru bento – tófu teriyaki nebo tófu age (tófu s
+                    teriyaki omáčkou nebo smažené tófu)
+                  </span>
+                  <span>270 Kč</span>
+                </p>
+              </div>
+              <div class="menu-day">
+                <h3>Pondělí</h3>
+                <p>
+                  <span>
+                    Sakana hiru bento – sakana awase tempura (smažené ryby v
+                    jemném těstíčku s omáčkou tensuyu)
+                  </span>
+                  <span>340 Kč</span>
+                </p>
+                <p>
+                  <span>
+                    Niku hiru bento – buta shougayaki (restované vepřové kousky
+                    nakládané v zázvoru)
+                  </span>
+                  <span>280 Kč</span>
+                </p>
+
+                <p>
+                  <span>
+                    Kombi hiru bento – kombinace sakana awase tempura a buta
+                    shougayaki
+                  </span>
+                  <span>310 Kč</span>
+                </p>
+                <p>
+                  <span>
+                    Vege tófu hiru bento – tófu teriyaki nebo tófu age (tófu s
+                    teriyaki omáčkou nebo smažené tófu)
+                  </span>
+                  <span>270 Kč</span>
+                </p>
+              </div>
+              <div class="menu-day">
+                <h3>Pondělí</h3>
+                <p>
+                  <span>
+                    Sakana hiru bento – sakana awase tempura (smažené ryby v
+                    jemném těstíčku s omáčkou tensuyu)
+                  </span>
+                  <span>340 Kč</span>
+                </p>
+                <p>
+                  <span>
+                    Niku hiru bento – buta shougayaki (restované vepřové kousky
+                    nakládané v zázvoru)
+                  </span>
+                  <span>280 Kč</span>
+                </p>
+
+                <p>
+                  <span>
+                    Kombi hiru bento – kombinace sakana awase tempura a buta
+                    shougayaki
+                  </span>
+                  <span>310 Kč</span>
+                </p>
+                <p>
+                  <span>
+                    Vege tófu hiru bento – tófu teriyaki nebo tófu age (tófu s
+                    teriyaki omáčkou nebo smažené tófu)
+                  </span>
+                  <span>270 Kč</span>
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <div class="footer">
+          <hr />
+          <div class="footer-container">
+            <p>Copyright © 2022 Jakub Plecháč</p>
+            <img class="footer-logo" src="assets/logos/main-logo.png" alt="" />
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

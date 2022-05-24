@@ -132,7 +132,7 @@ html {
   }
 }
 
-@media screen and (max-width: 927px) {
+@media screen and (max-width: 944px) {
   .main-logo {
     margin-top: 20%;
   }
@@ -173,19 +173,11 @@ html {
   }
 }
 
-@media screen and (max-width: 600px) {
-}
-
-@media screen and (max-width: 550px) {
-  .contacts,
+@media screen and (max-width: 700px) {
   .footer-container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-  }
-  .google-map {
-    width: 100%;
-    height: 300px;
   }
 }

@@ -39,7 +39,33 @@
   }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 900px) {
+  .google-map {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .google-map {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .contacts,
+  .footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .google-map {
+    width: 100%;
+    height: 300px;
+  }
+  .contact-left-side {
+    width: 100%;
+  }
   .contact-left-side-items {
     display: flex !important;
     justify-content: space-between !important;
