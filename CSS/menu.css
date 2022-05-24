@@ -23,6 +23,7 @@ aside p {
   margin: 0;
   cursor: pointer;
   padding: 1em;
+  transition: all 0.3s ease;
 }
 
 aside p:hover {
