@@ -2,6 +2,10 @@
   display: flex;
 }
 
+aside a p {
+  color: white;
+}
+
 article {
   padding-top: 0 !important;
   flex: 1;
@@ -30,9 +34,10 @@ aside p {
   transition: all 0.3s ease;
 }
 
-aside p:hover {
-  color: black;
+aside p:hover,
+aside p a:hover {
   background: white;
+  color: black;
 }
 
 .title-first {
