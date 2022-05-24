@@ -141,7 +141,7 @@ html {
   }
 }
 
-@media screen and (max-width: 896px) {
+@media screen and (max-width: 944px) {
   .main-logo {
     margin-top: 20%;
   }
@@ -158,7 +158,7 @@ html {
     display: none;
   }
   .hidden-menu {
-    display: inline !important;
+    display: grid !important;
   }
   .container {
     width: 100%;
