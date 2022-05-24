@@ -111,6 +111,10 @@ html {
   width: 100px;
 }
 
+.icon-detail {
+  margin: 0px !important;
+}
+
 @media screen and (max-width: 1500px) {
   .container {
     width: 60%;
