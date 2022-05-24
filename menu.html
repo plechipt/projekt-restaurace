@@ -19,7 +19,7 @@
     <!-- Main top bar -->
     <div class="top-bar">
       <header></header>
-      <nav>
+      <nav class="shown-menu">
         <div>
           <a href="./index.html">
             <img class="main-logo" src="assets/logos/main-logo.png" alt="" />
@@ -54,7 +54,7 @@
         </div>
         <div>
           <div class="menu-item">
-            <a class="icon-camera" href="">Fotografie</a>
+            <a class="icon-camera" href="./fotografie.html">Fotografie</a>
           </div>
         </div>
         <div>
@@ -64,6 +64,24 @@
         </div>
       </nav>
     </div>
+    <nav class="hidden-menu">
+      <img
+        id="hidden-main-logo"
+        class="main-logo"
+        src="assets/logos/main-logo.png"
+        alt=""
+      />
+      <div id="menu-links">
+        <a href="menu.html">Menu</a>
+        <a href="dezerty.html">Dezerty</a>
+        <a href="napoje.html">Nápoje</a>
+        <a href="fotografie.html">Fotografie</a>
+        <a href="kontakty.html">Kontakty</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="toggleMenu()"
+        >click me</a
+      >
+    </nav>
     <!-- Content container -->
     <div class="container">
       <main>
@@ -221,4 +239,5 @@
       </footer>
     </div>
   </body>
+  <script src="script.js"></script>
 </html>
