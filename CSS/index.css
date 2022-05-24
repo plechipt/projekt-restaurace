@@ -132,18 +132,18 @@ html {
   }
 }
 
+@media screen and (max-width: 927px) {
+  .main-logo {
+    margin-top: 20%;
+  }
+}
+
 @media screen and (max-width: 900px) {
   .container {
     width: 86.5%;
   }
   .restaurant-image {
     width: 100%;
-  }
-}
-
-@media screen and (max-width: 944px) {
-  .main-logo {
-    margin-top: 20%;
   }
 }
 
