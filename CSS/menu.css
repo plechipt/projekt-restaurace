@@ -8,6 +8,10 @@ article {
   padding: 5px 0px 0px 30px;
 }
 
+.article-without-aside {
+  padding: 0;
+}
+
 .content {
   display: block;
   overflow: hidden;
