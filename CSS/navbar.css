@@ -117,7 +117,8 @@ nav,
 }
 
 /* Style navigation menu links */
-.hidden-menu a {
+#menu-links a,
+.icon {
   color: white;
   padding: 14px 16px;
   text-decoration: none;
@@ -127,7 +128,6 @@ nav,
 
 /* Style the hamburger menu */
 .hidden-menu a.icon {
-  background: black;
   display: block;
   position: absolute;
   top: 0;
@@ -135,7 +135,7 @@ nav,
 }
 
 /* Add a grey background color on mouse-over */
-.hidden-menu a:hover {
+#menu-links a:hover {
   background-color: #ddd;
   color: black;
 }
@@ -146,6 +146,7 @@ nav,
 }
 
 #hidden-main-logo {
+  cursor: pointer;
   margin-left: 1.1em;
 }
 
