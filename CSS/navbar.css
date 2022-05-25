@@ -154,3 +154,17 @@ nav,
 .menu-links {
   margin-top: 2em !important;
 }
+
+.hidden-menu-submenu {
+  display: none ;
+  flex-direction: column;
+  justify-content: start;
+  margin: 0em;
+  color: white;
+}
+
+.hidden-menu-submenu p {
+  cursor: pointer;
+  margin: 7.5px !important;
+}
+
