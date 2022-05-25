@@ -53,3 +53,8 @@ aside p a:hover {
   justify-content: space-between;
   font-size: 14.5px;
 }
+
+.main-container img {
+  width: 100%;
+  margin-bottom: 2em;
+}
