@@ -58,15 +58,6 @@ nav,
   text-align: center;
 }
 
-.menu-item > a:hover {
-  color: white;
-}
-
-.menu-item:hover {
-  background-color: white;
-  color: black;
-}
-
 .menu-item span {
   display: block;
   color: white;
@@ -91,6 +82,15 @@ nav,
 .menu-item:hover .sub-menu {
   display: block;
   background-color: var(--sub-menu);
+}
+
+.shown-menu div:not(:first-of-type):hover {
+  background-color: white;
+  color: black;
+}
+
+.menu-item > a:hover {
+  color: white;
 }
 
 .menu-item span:hover,
