@@ -45,13 +45,7 @@
   }
 }
 
-@media screen and (max-width: 800px) {
-  .google-map {
-    width: 95%;
-  }
-}
-
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 850px) {
   .contacts,
   .footer-container {
     display: flex;
