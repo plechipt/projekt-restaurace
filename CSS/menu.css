@@ -21,12 +21,6 @@ article {
   overflow: hidden;
 }
 
-aside {
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
-  top: 0;
-}
-
 aside p {
   margin: 0;
   cursor: pointer;
