@@ -85,3 +85,8 @@
 .icon-camera:before {
   margin-right: 0.5em;
 }
+.icon-right-arrow:before,
+.icon-down-arrow:before {
+  margin-left: 5px;
+  font-size: 12.5px;
+}

@@ -188,6 +188,11 @@ nav,
   color: white;
 }
 
+.icon-right-arrow,
+.icon-down-arrow {
+  cursor: pointer;
+}
+
 @media screen and (max-width: 900px) {
   .sub-menu {
     font-size: 14px;
