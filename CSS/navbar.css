@@ -106,7 +106,6 @@ nav,
   color: white;
 }
 
-.menu-item span:hover,
 .menu-item a:hover {
   color: black;
 }

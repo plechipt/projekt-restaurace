@@ -112,6 +112,20 @@ html {
   align-items: center;
 }
 
+.footer-container div {
+  justify-content: start;
+  margin-bottom: 1em;
+}
+
+.footer-container cite {
+  margin-left: 6px;
+}
+
+.footer-container cite a {
+  color: white;
+  text-decoration: underline;
+}
+
 .footer-logo {
   width: 100px;
 }
