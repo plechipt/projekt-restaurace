@@ -80,6 +80,10 @@ html {
   margin-top: 1.5em;
 }
 
+.restaurant-image-container cite {
+  font-size: 14px;
+}
+
 .menu-day p span {
   max-width: 80%;
 }
@@ -117,11 +121,7 @@ html {
   margin-bottom: 1em;
 }
 
-.footer-container cite {
-  margin-left: 6px;
-}
-
-.footer-container cite a {
+cite a {
   color: white;
   text-decoration: underline;
 }
