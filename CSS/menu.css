@@ -6,7 +6,7 @@ aside {
 article {
   padding-top: 0 !important;
   flex: 1;
-  padding: 5px 0px 0px 30px;
+  padding: 5px 0px 0px 0px;
 }
 
 .article-without-aside {
@@ -16,6 +16,14 @@ article {
 .content {
   display: block;
   overflow: hidden;
+}
+
+.menu-aside {
+  min-width: 15% !important;
+}
+
+.drinks-aside {
+  min-width: 25% !important;
 }
 
 aside a p {
@@ -33,6 +41,10 @@ aside p:hover,
 aside p a:hover {
   background: white;
   color: black;
+}
+
+.aside-links-container {
+  position: fixed;
 }
 
 .title-first {
@@ -69,9 +81,15 @@ aside p a:hover {
   aside {
     display: block !important;
   }
+  .aside-links-container {
+    margin-top: 3em;
+  }
 }
 
 @media screen and (max-width: 1280px) {
+  .aside-links-container {
+    position: static;
+  }
   .dropdown-menu {
     display: flex;
   }

@@ -5,22 +5,20 @@ const toggleMenu = () => {
   } else {
     x.style.display = "block";
   }
-}
+};
 
 const showOrHideDropdownMenu = () => {
-  const dropdownMenu = document.querySelector(".dropdown-menu")
-  const arrow = document.querySelector(".dropdown-menu span")
-  const aside = document.querySelector("#content aside")
+  const arrow = document.querySelector(".dropdown-menu span");
+  const aside = document.querySelector("#content aside");
 
   if (aside.style.display === "none" || aside.style.display === "") {
-    aside.style.display = "block"
-    arrow.className = "icon-down-arrow-big"
+    aside.style.display = "block";
+    arrow.className = "icon-down-arrow-big";
+  } else {
+    aside.style.display = "none";
+    arrow.className = "icon-up-arrow";
   }
-  else {
-    aside.style.display = "none"
-    arrow.className = "icon-up-arrow"
-  }
-}
+};
 
 // Show submenu in hamburger link
 const links = document.querySelectorAll(".icon-right-arrow");
@@ -48,4 +46,3 @@ submenuLinks.forEach((submenuLink) => {
     menu.style.display = "none";
   });
 });
-

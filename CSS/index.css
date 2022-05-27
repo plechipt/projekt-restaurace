@@ -143,7 +143,13 @@ cite a {
   margin: 0px !important;
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1700px) {
+  .container {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 1600px) {
   .container {
     width: 70%;
   }
