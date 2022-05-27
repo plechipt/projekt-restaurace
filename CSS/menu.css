@@ -2,10 +2,6 @@
   display: flex;
 }
 
-aside a p {
-  color: white;
-}
-
 article {
   padding-top: 0 !important;
   flex: 1;
@@ -19,6 +15,10 @@ article {
 .content {
   display: block;
   overflow: hidden;
+}
+
+aside a p {
+  color: white;
 }
 
 aside p {
@@ -53,8 +53,23 @@ aside p a:hover {
   margin-bottom: 2em;
 }
 
+.dropdown-menu {
+  display: none;
+  padding: 1em;
+  background-color: rgb(53, 53, 53);
+  justify-content: center;
+}
+
+.dropdown-menu span {
+  z-index: 0;
+}
+
 @media screen and (max-width: 1280px) {
+  .dropdown-menu {
+    display: flex;
+  }
   aside {
+    display: none;
     margin-bottom: 2em;
   }
   aside a p {

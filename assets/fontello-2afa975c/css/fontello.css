@@ -75,18 +75,27 @@
 .icon-menu:before {
   content: "\e808";
 } /* '' */
-.icon-down-arrow:before {
+.icon-down-arrow:before, .icon-down-arrow-big:before, .icon-up-arrow:before {
   content: "\e809";
 } /* '' */
 .icon-right-arrow:before {
   content: "\e80c";
 } /* '' */
+
 .icon-telephone:before,
 .icon-camera:before {
   margin-right: 0.5em;
 }
+
 .icon-right-arrow:before,
 .icon-down-arrow:before {
   margin-left: 5px;
   font-size: 12.5px;
+}
+
+.icon-down-arrow-big:before, .icon-up-arrow:before {
+  font-size: 30px;
+}
+.icon-up-arrow::before {
+  transform: rotate(180deg);
 }

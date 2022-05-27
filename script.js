@@ -33,3 +33,20 @@ submenuLinks.forEach((submenuLink) => {
     menu.style.display = "none";
   });
 });
+
+// Open and close Dropdown menu 
+const dropdownMenu = document.querySelector(".dropdown-menu")
+const arrow = document.querySelector(".dropdown-menu span")
+const aside = document.querySelector("#content aside")
+
+
+dropdownMenu.addEventListener("click", (handleClick) => {
+  if (aside.style.display === "none" || aside.style.display === "") {
+    aside.style.display = "block"
+    arrow.className = "icon-down-arrow-big"
+  }
+  else {
+    aside.style.display = "none"
+    arrow.className = "icon-up-arrow"
+  }
+})
