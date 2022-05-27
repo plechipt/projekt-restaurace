@@ -98,6 +98,10 @@ nav,
   color: black;
 }
 
+.shown-menu div:not(:first-of-type):hover .menu-link {
+  color: black;
+}
+
 .shown-menu div p {
   color: gray !important;
 }
