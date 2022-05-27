@@ -1,4 +1,5 @@
-#content {
+#content,
+aside {
   display: flex;
 }
 
@@ -62,6 +63,12 @@ aside p a:hover {
 
 .dropdown-menu span {
   z-index: 0;
+}
+
+@media screen and (min-width: 1281px) {
+  aside {
+    display: block !important;
+  }
 }
 
 @media screen and (max-width: 1280px) {

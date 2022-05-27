@@ -145,12 +145,6 @@ cite a {
 
 @media screen and (max-width: 1500px) {
   .container {
-    width: 60%;
-  }
-}
-
-@media screen and (max-width: 1400px) {
-  .container {
     width: 70%;
   }
 }
