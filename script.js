@@ -1,4 +1,4 @@
-function toggleMenu() {
+const toggleMenu = () => {
   const x = document.getElementById("menu-links");
   if (x.style.display === "block") {
     x.style.display = "none";
@@ -7,7 +7,7 @@ function toggleMenu() {
   }
 }
 
-function showOrHideDropdownMenu () {
+const showOrHideDropdownMenu = () => {
   const dropdownMenu = document.querySelector(".dropdown-menu")
   const arrow = document.querySelector(".dropdown-menu span")
   const aside = document.querySelector("#content aside")
