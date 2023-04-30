@@ -47,11 +47,11 @@ submenuLinks.forEach((submenuLink) => {
   });
 });
 
-// Change favicon depending on theme bode
-const darkThemeMediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+// Change favicon depending on theme mode
 const favicon = document.querySelector('link[rel="icon"]');
+const darkThemeMediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
 
-const faviconDarkPath = "./assets/logos/favicon.ico";
+const faviconDarkPath = "./assets/logos/favicon-dark.ico";
 const favionLightPath = "./assets/logos/favicon-light.ico";
 
 // If the browser is currently in dark mode, change the favicon to the dark version
