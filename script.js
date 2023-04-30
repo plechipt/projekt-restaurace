@@ -46,3 +46,27 @@ submenuLinks.forEach((submenuLink) => {
     menu.style.display = "none";
   });
 });
+
+// Change favicon depending on theme bode
+const darkThemeMediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+const favicon = document.querySelector('link[rel="icon"]');
+
+const faviconDarkPath = "./assets/logos/favicon.ico";
+const favionLightPath = "./assets/logos/favicon-light.ico";
+
+// If the browser is currently in dark mode, change the favicon to the dark version
+if (darkThemeMediaQuery.matches) {
+  favicon.href = favionLightPath;
+} else {
+  // Otherwise, change the favicon to the light version
+  favicon.href = faviconDarkPath;
+}
+
+// Listen for changes to the theme mode of the browser
+darkThemeMediaQuery.addEventListener("change", (event) => {
+  if (event.matches) {
+    favicon.href = favionLightPath;
+  } else {
+    favicon.href = faviconDarkPath;
+  }
+});
