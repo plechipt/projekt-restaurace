@@ -161,21 +161,15 @@ cite a {
   }
 }
 
-@media screen and (max-width: 944px) {
-  .main-logo {
-    margin-top: 20%;
-  }
-}
-
 @media screen and (max-width: 900px) {
   .restaurant-image {
     width: 100%;
   }
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 928px) {
   .main-logo {
-    margin-top: 0;
+    margin-top: 0.5em;
   }
   .top-bar {
     padding: 0em;
