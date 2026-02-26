@@ -129,7 +129,7 @@
       <!-- Contacts and map -->
       <article>
         <div class="main-container">
-          <h2>Kontakty</h2>
+          <h1>Kontakty</h1>
           <hr>
           <div class="contacts">
             <div class="contact-left-side">
@@ -166,7 +166,27 @@
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
+          <div class="contact-form-container">
+            <h3>Napište nám</h3>
+            <form class="contact-form" action="mailto:info@banzai.cz" method="post" enctype="text/plain">
+              <div class="form-group">
+                <label for="name">Jméno a příjmení</label>
+                <input type="text" id="name" name="name" placeholder="Vaše jméno..." required>
+              </div>
+              <div class="form-group">
+                <label for="email">E-mailová adresa</label>
+                <input type="email" id="email" name="email" placeholder="vas@email.cz" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Vaše zpráva</label>
+                <textarea id="message" name="message" rows="6" placeholder="S čím vám můžeme pomoci?"
+                  required></textarea>
+              </div>
+              <button type="submit" class="submit-btn">Odeslat zprávu</button>
+            </form>
+          </div>
         </div>
+
       </article>
     </main>
     <footer>

@@ -36,6 +36,11 @@ html {
   object-fit: 100px 10px;
 }
 
+.main-container h1 {
+  display: flex;
+  justify-content: center;
+}
+
 .container {
   margin-top: 6em !important;
 }
