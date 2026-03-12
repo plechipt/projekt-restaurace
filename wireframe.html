@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Japanese Restaurant">
+
+  <link rel="stylesheet" href="CSS/wireframe.css">
+  <link rel="icon" href="./assets/logos/favicon-light.ico">
+
+  <title>Banzai</title>
+</head>
+
+<body>
+
+  <div class="page-header">
+    <h1>Banzai</h1>
+    <div class="sub">Drátěný model · Přesné rozvržení dle webu · Všechna zařízení</div>
+  </div>
+
+  <div class="tabs">
+    <button class="tab active" onclick="show('home',this)">① Úvodní stránka</button>
+    <button class="tab" onclick="show('menu',this)">② Menu</button>
+    <button class="tab" onclick="show('gallery',this)">③ Fotografie</button>
+    <button class="tab" onclick="show('contact',this)">④ Kontakty</button>
+  </div>
+
+
+  <!-- ═══════════════════════════════
+     ① ÚVODNÍ STRÁNKA
+     Skutečné rozložení:
+     - Navbar (logo + links)
+     - H1 nadpis
+     - H2 Polední menu
+     - H3 + pokrmy pro každý den (1 sloupec)
+     - Oddělovač
+     - Foto restaurace (celá šířka)
+     - Footer
+═══════════════════════════════ -->
+  <div class="device-row active" id="home">
+
+    <!-- DESKTOP -->
+    <div class="device-col">
+      <div class="device-name">Desktop</div>
+      <div class="device-px">1200 px +</div>
+      <div class="frame frame-desktop">
+        <div class="col gap2">
+
+          <!-- NAVBAR -->
+          <div class="row" style="height:58px; border-bottom:1px dashed #222;">
+            <div class="b b-logo"
+              style="width:160px; height:58px; flex-shrink:0; border-top:none; border-left:none; border-bottom:none; border-right:1px dashed #2a2a2a;">
+              BANZAI</div>
+            <div class="b b-nav"
+              style="flex:1; height:58px; border:none; display:flex; align-items:center; justify-content:center; gap:28px;">
+              <span>Menu ▾</span><span>Dezerty</span><span>Nápoje ▾</span><span>Fotografie</span><span>Kontakty</span>
+            </div>
+          </div>
+
+          <!-- obsah centrovaný na 60% šířky -->
+          <div style="width:60%; margin:0 auto; display:flex; flex-direction:column; gap:0; padding:20px 0 24px;">
+
+            <div class="b b-h1" style="height:44px; margin-bottom:16px;">H1 — Vítejte v japonské restauraci Banzai!
+            </div>
+
+            <div class="b b-h2" style="height:30px; margin-bottom:10px;">H2 — Polední menu (16.5.–20.5.)</div>
+
+            <!-- Pondělí -->
+            <div class="b b-h3" style="height:24px; margin-bottom:6px;">H3 — Pondělí</div>
+            <div class="b b-text" style="height:20px; margin-bottom:2px;">Sakana hiru bento – smažené ryby v těstíčku s
+              omáčkou tensuyu</div>
+            <div class="b b-price" style="height:16px; margin-bottom:6px;">340 Kč</div>
+            <div class="b b-text" style="height:20px; margin-bottom:2px;">Niku hiru bento – restované vepřové kousky
+              nakládané v zázvoru</div>
+            <div class="b b-price" style="height:16px; margin-bottom:2px;">280 Kč</div>
+            <div class="b b-text" style="height:20px; margin-bottom:2px;">Kombi hiru bento – kombinace tempura a
+              vepřového</div>
+            <div class="b b-price" style="height:16px; margin-bottom:2px;">310 Kč</div>
+            <div class="b b-text" style="height:20px; margin-bottom:2px;">Vege tófu hiru bento – tófu teriyaki nebo tófu
+              age</div>
+            <div class="b b-price" style="height:16px; margin-bottom:10px;">270 Kč</div>
+
+            <div class="b b-sep" style="margin-bottom:10px;">─ ─ ─</div>
+
+            <!-- Úterý -->
+            <div class="b b-h3" style="height:24px; margin-bottom:6px;">H3 — Úterý</div>
+            <div class="b b-text" style="height:20px; margin-bottom:2px;">Ohiru teishoku – japonské hlavní jídlo, rýže,
+              polévka, salát...</div>
+            <div class="b b-price" style="height:16px; margin-bottom:2px;">350 Kč</div>
+            <div class="b b-text" style="height:20px; margin-bottom:2px;">Sakana teishoku – pečená ryba, rýže,
+              misoshiru...</div>
+            <div class="b b-price" style="height:16px; margin-bottom:2px;">470 Kč</div>
+            <div class="b b-text" style="height:20px; margin-bottom:2px;">Sushi teishoku – nigiri 4ks, hoso maki 6ks...
+            </div>
+            <div class="b b-price" style="height:16px; margin-bottom:2px;">560 Kč</div>
+            <div class="b b-text" style="height:20px; margin-bottom:2px;">Kaisen don – kousky ryb na sushi rýži...</div>
+            <div class="b b-price" style="height:16px; margin-bottom:10px;">620 Kč</div>
+
+            <div class="b b-sep" style="margin-bottom:10px;">─ ─ ─</div>
+
+            <!-- Středa, Čtvrtek, Pátek – zkrácené -->
+            <div class="b b-h3" style="height:24px; margin-bottom:6px;">H3 — Středa</div>
+            <div class="b b-text" style="height:50px; margin-bottom:10px; font-size:8px; color:#303030;">4 pokrmy ·
+              Tempura Lunch · Saba Shioyaki · Shake · Tori Lunch<br>ceny: 500–700 Kč</div>
+
+            <div class="b b-sep" style="margin-bottom:10px;">─ ─ ─</div>
+
+            <div class="b b-h3" style="height:24px; margin-bottom:6px;">H3 — Čtvrtek</div>
+            <div class="b b-text" style="height:50px; margin-bottom:10px; font-size:8px; color:#303030;">4 pokrmy · Buta
+              Lunch · Gyusuki · Karaage · Ohiru teishoku<br>ceny: 350–800 Kč</div>
+
+            <div class="b b-sep" style="margin-bottom:10px;">─ ─ ─</div>
+
+            <div class="b b-h3" style="height:24px; margin-bottom:6px;">H3 — Pátek</div>
+            <div class="b b-text" style="height:50px; margin-bottom:16px; font-size:8px; color:#303030;">4 pokrmy · Nori
+              tempura salmon · Tekka zuke don · Maguro teriyaki · Bum Bo Nam Bo<br>ceny: 200–320 Kč</div>
+
+            <div class="b b-sep" style="margin-bottom:16px;">─ ─ ─</div>
+
+            <!-- FOTO RESTAURACE -->
+            <div class="b b-img" style="height:200px; margin-bottom:6px;"><span>Foto restaurace · restaurant.webp · celá
+                šířka kontejneru</span></div>
+            <div style="text-align:right; font-size:8px; color:#2a2a2a; padding-right:4px; margin-bottom:4px;">Photo by
+              mgstudyo</div>
+
+          </div>
+
+          <!-- FOOTER -->
+          <div class="b b-footer"
+            style="height:38px; border-left:none; border-right:none; border-bottom:none; flex-direction:column;">
+            <span>Copyright © 2026 Jakub Plecháč</span>
+            <span style="font-size:7px; color:#222; margin-top:2px;">Background by azzzya · [Logo]</span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- TABLET -->
+    <div class="device-col">
+      <div class="device-name">Tablet</div>
+      <div class="device-px">768 – 927 px</div>
+      <div class="frame frame-tablet">
+        <div class="col gap2">
+
+          <div class="row" style="height:52px; border-bottom:1px dashed #222;">
+            <div class="b b-logo"
+              style="width:130px; height:52px; flex-shrink:0; border-top:none; border-left:none; border-bottom:none; border-right:1px dashed #2a2a2a; font-size:13px;">
+              BANZAI</div>
+            <div class="b b-nav"
+              style="flex:1; height:52px; border:none; font-size:8px; display:flex; align-items:center; justify-content:center; gap:14px;">
+              <span>Menu</span><span>Dezerty</span><span>Nápoje</span><span>Foto</span><span>Kontakty</span>
+            </div>
+          </div>
+
+          <div style="width:85%; margin:0 auto; display:flex; flex-direction:column; gap:0; padding:16px 0 20px;">
+            <div class="b b-h1" style="height:40px; margin-bottom:14px; font-size:9px;">H1 — Vítejte v japonské
+              restauraci Banzai!</div>
+            <div class="b b-h2" style="height:26px; margin-bottom:8px; font-size:8px;">H2 — Polední menu (16.5.–20.5.)
+            </div>
+
+            <div class="b b-h3" style="height:22px; margin-bottom:5px; font-size:8px;">H3 — Pondělí</div>
+            <div class="b b-text" style="height:18px; margin-bottom:2px; font-size:7.5px;">Sakana hiru bento – smažené
+              ryby...</div>
+            <div class="b b-price" style="height:14px; margin-bottom:4px; font-size:7.5px;">340 Kč</div>
+            <div class="b b-text" style="height:18px; margin-bottom:2px; font-size:7.5px;">Niku hiru bento – vepřové...
+            </div>
+            <div class="b b-price" style="height:14px; margin-bottom:4px; font-size:7.5px;">280 Kč</div>
+            <div class="b b-text" style="height:18px; margin-bottom:2px; font-size:7.5px;">Kombi / Vege tófu hiru
+              bento...</div>
+            <div class="b b-price" style="height:14px; margin-bottom:8px; font-size:7.5px;">310 / 270 Kč</div>
+
+            <div class="b b-sep" style="margin-bottom:8px;">─ ─ ─</div>
+
+            <div class="b b-h3" style="height:22px; margin-bottom:5px; font-size:8px;">H3 — Úterý</div>
+            <div class="b b-text" style="height:44px; margin-bottom:8px; font-size:7.5px; color:#303030;">4 pokrmy:
+              Ohiru · Sakana · Sushi · Kaisen<br>350 – 620 Kč</div>
+
+            <div class="b b-sep" style="margin-bottom:8px;">─ ─ ─</div>
+
+            <div class="b b-h3" style="height:22px; margin-bottom:5px; font-size:8px;">H3 — Středa</div>
+            <div class="b b-text" style="height:44px; margin-bottom:8px; font-size:7.5px; color:#303030;">4 pokrmy:
+              Tempura · Saba · Shake · Tori<br>500 – 700 Kč</div>
+
+            <div class="b b-sep" style="margin-bottom:8px;">─ ─ ─</div>
+
+            <div class="b b-h3" style="height:22px; margin-bottom:5px; font-size:8px;">H3 — Čtvrtek</div>
+            <div class="b b-text" style="height:44px; margin-bottom:8px; font-size:7.5px; color:#303030;">4 pokrmy: Buta
+              · Gyusuki · Karaage · Ohiru<br>350 – 800 Kč</div>
+
+            <div class="b b-sep" style="margin-bottom:8px;">─ ─ ─</div>
+
+            <div class="b b-h3" style="height:22px; margin-bottom:5px; font-size:8px;">H3 — Pátek</div>
+            <div class="b b-text" style="height:44px; margin-bottom:14px; font-size:7.5px; color:#303030;">4 pokrmy:
+              Nori salmon · Tekka don · Maguro · Bum Bo<br>200 – 320 Kč</div>
+
+            <div class="b b-sep" style="margin-bottom:14px;">─ ─ ─</div>
+
+            <div class="b b-img" style="height:160px; margin-bottom:4px;"><span>Foto restaurace · restaurant.webp</span>
+            </div>
+            <div style="text-align:right; font-size:7px; color:#2a2a2a; margin-bottom:2px;">Photo by mgstudyo</div>
+          </div>
+
+          <div class="b b-footer" style="height:34px; border-left:none; border-right:none; border-bottom:none;">
+            Copyright © 2026 Jakub Plecháč · [Logo]</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MOBILE -->
+    <div class="device-col">
+      <div class="device-name">Mobil</div>
+      <div class="device-px">do 767 px</div>
+      <div class="frame frame-mobile">
+        <div class="col gap2">
+
+          <!-- hamburger navbar -->
+          <div class="row"
+            style="height:46px; border-bottom:1px dashed #222; align-items:center; justify-content:space-between; padding:0 10px;">
+            <div class="b b-logo" style="width:76px; height:30px; font-size:10px; border-color:#5a1018; flex-shrink:0;">
+              BANZAI</div>
+            <div class="b b-ham" style="width:32px; height:30px; flex-shrink:0;">☰</div>
+          </div>
+
+          <!-- hamburger menu rozbalené (skryté v reálu) -->
+          <div class="b b-nav"
+            style="height:120px; border-left:none; border-right:none; flex-direction:column; gap:6px; font-size:8px; padding:8px; color:#3a3a3a;">
+            <span>Menu ▾</span><span>Dezerty</span><span>Nápoje ▾</span><span>Fotografie</span><span>Kontakty</span>
+            <span style="font-size:7px; color:#252525; margin-top:4px;">(mobilní menu – zobrazí se po kliknutí na
+              ☰)</span>
+          </div>
+
+          <div style="width:100%; display:flex; flex-direction:column; gap:0; padding:12px 12px 16px;">
+            <div class="b b-h1" style="height:38px; margin-bottom:12px; font-size:8px;">H1 — Vítejte v japonské
+              restauraci Banzai!</div>
+            <div class="b b-h2" style="height:22px; margin-bottom:8px; font-size:7.5px;">H2 — Polední menu</div>
+
+            <div class="b b-h3" style="height:20px; margin-bottom:4px; font-size:7.5px;">H3 — Pondělí</div>
+            <div class="b b-text" style="height:16px; margin-bottom:2px; font-size:7px;">Sakana hiru bento...</div>
+            <div class="b b-price" style="height:14px; margin-bottom:3px; font-size:7px;">340 Kč</div>
+            <div class="b b-text" style="height:16px; margin-bottom:2px; font-size:7px;">Niku hiru bento...</div>
+            <div class="b b-price" style="height:14px; margin-bottom:3px; font-size:7px;">280 Kč</div>
+            <div class="b b-text" style="height:16px; margin-bottom:2px; font-size:7px;">Kombi hiru bento...</div>
+            <div class="b b-price" style="height:14px; margin-bottom:3px; font-size:7px;">310 Kč</div>
+            <div class="b b-text" style="height:16px; margin-bottom:2px; font-size:7px;">Vege tófu hiru bento...</div>
+            <div class="b b-price" style="height:14px; margin-bottom:7px; font-size:7px;">270 Kč</div>
+
+            <div class="b b-sep" style="margin-bottom:7px;">─ ─</div>
+
+            <div class="b b-h3" style="height:20px; margin-bottom:4px; font-size:7.5px;">H3 — Úterý</div>
+            <div class="b b-text" style="height:36px; margin-bottom:7px; font-size:7px; color:#2e2e2e;">4 pokrmy 350–620
+              Kč</div>
+
+            <div class="b b-sep" style="margin-bottom:7px;">─ ─</div>
+
+            <div class="b b-h3" style="height:20px; margin-bottom:4px; font-size:7.5px;">H3 — Středa</div>
+            <div class="b b-text" style="height:36px; margin-bottom:7px; font-size:7px; color:#2e2e2e;">4 pokrmy 500–700
+              Kč</div>
+
+            <div class="b b-sep" style="margin-bottom:7px;">─ ─</div>
+
+            <div class="b b-h3" style="height:20px; margin-bottom:4px; font-size:7.5px;">H3 — Čtvrtek</div>
+            <div class="b b-text" style="height:36px; margin-bottom:7px; font-size:7px; color:#2e2e2e;">4 pokrmy 350–800
+              Kč</div>
+
+            <div class="b b-sep" style="margin-bottom:7px;">─ ─</div>
+
+            <div class="b b-h3" style="height:20px; margin-bottom:4px; font-size:7.5px;">H3 — Pátek</div>
+            <div class="b b-text" style="height:36px; margin-bottom:12px; font-size:7px; color:#2e2e2e;">4 pokrmy
+              200–320 Kč</div>
+
+            <div class="b b-sep" style="margin-bottom:12px;">─ ─</div>
+
+            <div class="b b-img" style="height:120px; margin-bottom:4px;"><span>Foto restaurace</span></div>
+            <div style="text-align:right; font-size:6.5px; color:#222; margin-bottom:2px;">Photo by mgstudyo</div>
+          </div>
+
+          <div class="b b-footer"
+            style="height:28px; border-left:none; border-right:none; border-bottom:none; font-size:7px;">© 2026 Jakub
+            Plecháč · [Logo]</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- ═══════════════════════════════
+     ② MENU
+     Skutečné rozložení:
+     - Navbar
+     - H1 Menu
+     - Kotevní navigace
+     - H2 + seznam pokrmů (1 sloupec)
+     - Footer
+═══════════════════════════════ -->
+  <div class="device-row" id="menu">
+
+    <div class="device-col">
+      <div class="device-name">Desktop</div>
+      <div class="device-px">1200 px +</div>
+      <div class="frame frame-desktop">
+        <div class="col gap2">
+          <div class="row" style="height:58px; border-bottom:1px dashed #222;">
+            <div class="b b-logo"
+              style="width:160px; height:58px; flex-shrink:0; border-top:none; border-left:none; border-bottom:none; border-right:1px dashed #2a2a2a;">
+              BANZAI</div>
+            <div class="b b-nav"
+              style="flex:1; height:58px; border:none; display:flex; align-items:center; justify-content:center; gap:28px;">
+              <span style="color:#bc212e;">Menu ▾</span><span>Dezerty</span><span>Nápoje
+                ▾</span><span>Fotografie</span><span>Kontakty</span>
+            </div>
+          </div>
+
+          <div style="width:60%; margin:0 auto; display:flex; flex-direction:column; gap:0; padding:20px 0 24px;">
+            <div class="b b-h1" style="height:44px; margin-bottom:10px;">H1 — Menu</div>
+            <div class="b b-anchor" style="height:28px; margin-bottom:16px; font-size:8px;">[Sushi sety] · [Sashimi] ·
+              [Nigirizushi] · [Uramaki] · [Hosomaki] · [Tempura]</div>
+
+            <div class="b b-h2" style="height:28px; margin-bottom:8px;">H2 — Sushi sety</div>
+            <div class="b b-text" style="height:20px; margin-bottom:2px;">Miwa sushi set 3ks – nigirizushi s máslovou
+              rybou aburi, lososem...</div>
+            <div class="b b-price" style="height:16px; margin-bottom:4px;">290 Kč</div>
+            <div class="b b-text" style="height:20px; margin-bottom:2px;">Seppiko sushi set 11ks – nigirizushi s
+              tuňákem, lososem, vlkem...</div>
+            <div class="b b-price" style="height:16px; margin-bottom:4px;">390 Kč</div>
+            <div class="b b-text" style="height:20px; margin-bottom:2px;">Kamitaki vege sushi set 19ks – avokádo,
+              shiitake, konjaku...</div>
+            <div class="b b-price" style="height:16px; margin-bottom:4px;">450 Kč</div>
+            <div class="b b-text" style="height:20px; margin-bottom:2px;">Tsurugi makimono set 32ks – kreveta, tuňák,
+              losos, úhoř...</div>
+            <div class="b b-price" style="height:16px; margin-bottom:4px;">500 Kč</div>
+            <div class="b b-text" style="height:20px; margin-bottom:2px;">Tateshina sushi set 22ks – losos, tuňák,
+              hamachi, mořský vlk...</div>
+            <div class="b b-price" style="height:16px; margin-bottom:4px;">560 Kč</div>
+            <div class="b b-text" style="height:20px; margin-bottom:2px;">Fuji sushi set 30ks – kreveta, losos, máslová
+              ryba, hamachi...</div>
+            <div class="b b-price" style="height:16px; margin-bottom:14px;">750 Kč</div>
+
+            <div class="b b-h2" style="height:28px; margin-bottom:8px;">H2 — Sashimi</div>
+            <div class="b b-text" style="height:20px; margin-bottom:2px;">Sanshoku set – plátky ze 3 druhů čerstvých
+              mořských ryb...</div>
+            <div class="b b-price" style="height:16px; margin-bottom:4px;">390 Kč</div>
+            <div class="b b-text" style="height:20px; margin-bottom:2px;">Yonshoku set – kranas japonský + 3 druhy ryb,
+              200 g...</div>
+            <div class="b b-price" style="height:16px; margin-bottom:4px;">590 Kč</div>
+            <div class="b b-text" style="height:60px; margin-bottom:14px; font-size:8px; color:#2e2e2e;">Sake · Maguro ·
+              Hamachi · Aburabozu sashimi<br>50 g porce · 170–270 Kč</div>
+
+            <div class="b b-h2" style="height:28px; margin-bottom:8px;">H2 — Nigirizushi</div>
+            <div class="b b-text" style="height:60px; margin-bottom:14px; font-size:8px; color:#2e2e2e;">Maguro ·
+              Hamachi · Unagi · Sake aburi · Tamagoyaki<br>85–130 Kč / kus</div>
+
+            <div class="b b-h2" style="height:28px; margin-bottom:8px;">H2 — Uramaki</div>
+            <div class="b b-text" style="height:60px; margin-bottom:14px; font-size:8px; color:#2e2e2e;">Ume vege ·
+              Yuzukoshou · Philadelphia · Spicy tuna · Sunset Blvd · Orange maki · Duhové sushi<br>245–465 Kč / 8 ks
+            </div>
+
+            <div class="b b-h2" style="height:28px; margin-bottom:8px;">H2 — Hosomaki</div>
+            <div class="b b-text" style="height:50px; margin-bottom:14px; font-size:8px; color:#2e2e2e;">Kappa · Avocado
+              · Shiitake · Kampyo · Oshinko maki<br>100–125 Kč / 6 ks</div>
+
+            <div class="b b-h2" style="height:28px; margin-bottom:8px;">H2 — Tempura</div>
+            <div class="b b-text" style="height:20px; margin-bottom:2px;">Tempura – kreveta, ryba, shiitake, zelenina,
+              omáčka tensuyu</div>
+            <div class="b b-price" style="height:16px; margin-bottom:4px;">320 Kč · 9 ks</div>
+            <div class="b b-text" style="height:20px; margin-bottom:2px;">Goten tempura ebi – smažené krevety v těstíčku
+            </div>
+            <div class="b b-price" style="height:16px;">310 Kč · 5 ks</div>
+          </div>
+
+          <div class="b b-footer"
+            style="height:38px; border-left:none; border-right:none; border-bottom:none; flex-direction:column;">
+            <span>Copyright © 2026 Jakub Plecháč</span><span
+              style="font-size:7px; color:#222; margin-top:2px;">Background by azzzya · [Logo]</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="device-col">
+      <div class="device-name">Tablet</div>
+      <div class="device-px">768 – 927 px</div>
+      <div class="frame frame-tablet">
+        <div class="col gap2">
+          <div class="row" style="height:52px; border-bottom:1px dashed #222;">
+            <div class="b b-logo"
+              style="width:130px; height:52px; flex-shrink:0; border-top:none; border-left:none; border-bottom:none; border-right:1px dashed #2a2a2a; font-size:13px;">
+              BANZAI</div>
+            <div class="b b-nav"
+              style="flex:1; height:52px; border:none; font-size:8px; display:flex; align-items:center; justify-content:center; gap:14px;">
+              <span
+                style="color:#bc212e;">Menu</span><span>Dezerty</span><span>Nápoje</span><span>Foto</span><span>Kontakty</span>
+            </div>
+          </div>
+          <div style="width:85%; margin:0 auto; display:flex; flex-direction:column; gap:0; padding:16px 0 20px;">
+            <div class="b b-h1" style="height:38px; margin-bottom:8px; font-size:9px;">H1 — Menu</div>
+            <div class="b b-anchor" style="height:26px; margin-bottom:12px; font-size:7.5px;">[Sushi sety] · [Sashimi] ·
+              [Nigiri] · [Uramaki] · [Hosomaki] · [Tempura]</div>
+
+            <div class="b b-h2" style="height:24px; margin-bottom:6px; font-size:8px;">H2 — Sushi sety</div>
+            <div class="b b-text" style="height:18px; margin-bottom:2px; font-size:7.5px;">Miwa sushi set 3ks – máslová
+              ryba, losos, tuňák...</div>
+            <div class="b b-price" style="height:14px; margin-bottom:3px; font-size:7.5px;">290 Kč</div>
+            <div class="b b-text" style="height:80px; margin-bottom:10px; font-size:7px; color:#2e2e2e;">Seppiko 390 ·
+              Kamitaki 450 · Tsurugi 500 · Tateshina 560 · Fuji 750 Kč</div>
+
+            <div class="b b-h2" style="height:24px; margin-bottom:6px; font-size:8px;">H2 — Sashimi</div>
+            <div class="b b-text" style="height:56px; margin-bottom:10px; font-size:7px; color:#2e2e2e;">Sanshoku 390 ·
+              Yonshoku 590 · Sake 200 · Maguro 240 · Hamachi 270 · Aburabozu 170 Kč</div>
+
+            <div class="b b-h2" style="height:24px; margin-bottom:6px; font-size:8px;">H2 — Nigirizushi</div>
+            <div class="b b-text" style="height:46px; margin-bottom:10px; font-size:7px; color:#2e2e2e;">Maguro 110 ·
+              Hamachi 120 · Unagi 130 · Sake aburi 95 · Tamagoyaki 85 Kč</div>
+
+            <div class="b b-h2" style="height:24px; margin-bottom:6px; font-size:8px;">H2 — Uramaki</div>
+            <div class="b b-text" style="height:56px; margin-bottom:10px; font-size:7px; color:#2e2e2e;">Ume ·
+              Yuzukoshou · Philadelphia · Spicy tuna · Sunset · Orange · Duhové<br>245–465 Kč / 8 ks</div>
+
+            <div class="b b-h2" style="height:24px; margin-bottom:6px; font-size:8px;">H2 — Hosomaki</div>
+            <div class="b b-text" style="height:40px; margin-bottom:10px; font-size:7px; color:#2e2e2e;">Kappa · Avocado
+              · Shiitake · Kampyo · Oshinko · 100–125 Kč / 6 ks</div>
+
+            <div class="b b-h2" style="height:24px; margin-bottom:6px; font-size:8px;">H2 — Tempura</div>
+            <div class="b b-text" style="height:40px; margin-bottom:0; font-size:7px; color:#2e2e2e;">Tempura 9ks 320 Kč
+              · Goten tempura ebi 5ks 310 Kč</div>
+          </div>
+          <div class="b b-footer"
+            style="height:32px; border-left:none; border-right:none; border-bottom:none; font-size:7.5px;">Copyright ©
+            2026 Jakub Plecháč · [Logo]</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="device-col">
+      <div class="device-name">Mobil</div>
+      <div class="device-px">do 767 px</div>
+      <div class="frame frame-mobile">
+        <div class="col gap2">
+          <div class="row"
+            style="height:46px; border-bottom:1px dashed #222; align-items:center; justify-content:space-between; padding:0 10px;">
+            <div class="b b-logo" style="width:76px; height:30px; font-size:10px; border-color:#5a1018; flex-shrink:0;">
+              BANZAI</div>
+            <div class="b b-ham" style="width:32px; height:30px; flex-shrink:0;">☰</div>
+          </div>
+          <div style="padding:10px; display:flex; flex-direction:column; gap:0;">
+            <div class="b b-h1" style="height:36px; margin-bottom:8px; font-size:7.5px;">H1 — Menu</div>
+            <div class="b b-anchor" style="height:22px; margin-bottom:10px; font-size:6.5px;">
+              [Sety]·[Sashimi]·[Nigiri]·[Uramaki]·[Hosomaki]</div>
+
+            <div class="b b-h2" style="height:20px; margin-bottom:4px; font-size:7.5px;">H2 — Sushi sety</div>
+            <div class="b b-text" style="height:16px; margin-bottom:2px; font-size:7px;">Miwa sushi set 3ks...</div>
+            <div class="b b-price" style="height:13px; margin-bottom:3px; font-size:6.5px;">290 Kč</div>
+            <div class="b b-text" style="height:60px; margin-bottom:8px; font-size:6.5px; color:#2e2e2e;">Seppiko 390 ·
+              Kamitaki 450<br>Tsurugi 500 · Tateshina 560<br>Fuji 750 Kč</div>
+
+            <div class="b b-h2" style="height:20px; margin-bottom:4px; font-size:7.5px;">H2 — Sashimi</div>
+            <div class="b b-text" style="height:50px; margin-bottom:8px; font-size:6.5px; color:#2e2e2e;">Sanshoku 390 ·
+              Sake 200<br>Maguro 240 · Hamachi 270<br>Aburabozu 170 Kč</div>
+
+            <div class="b b-h2" style="height:20px; margin-bottom:4px; font-size:7.5px;">H2 — Nigirizushi · Uramaki ·
+              Hosomaki · Tempura</div>
+            <div class="b b-text" style="height:50px; font-size:6.5px; color:#2e2e2e;">stejný vzor: název · popis ·
+              cena<br>každá kategorie pod sebou</div>
+          </div>
+          <div class="b b-footer"
+            style="height:26px; border-left:none; border-right:none; border-bottom:none; font-size:7px;">© 2026 · [Logo]
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- ③ FOTOGRAFIE -->
+  <div class="device-row" id="gallery">
+
+    <div class="device-col">
+      <div class="device-name">Desktop</div>
+      <div class="device-px">1200 px +</div>
+      <div class="frame frame-desktop">
+        <div class="col gap2">
+          <div class="row" style="height:58px; border-bottom:1px dashed #222;">
+            <div class="b b-logo"
+              style="width:160px; height:58px; flex-shrink:0; border-top:none; border-left:none; border-bottom:none; border-right:1px dashed #2a2a2a;">
+              BANZAI</div>
+            <div class="b b-nav"
+              style="flex:1; height:58px; border:none; display:flex; align-items:center; justify-content:center; gap:28px;">
+              <span>Menu ▾</span><span>Dezerty</span><span>Nápoje ▾</span><span style="color:#bc212e;">Fotografie
+                ●</span><span>Kontakty</span>
+            </div>
+          </div>
+          <div style="width:60%; margin:0 auto; padding:20px 0 24px; display:flex; flex-direction:column; gap:0;">
+            <div class="b b-h1" style="height:44px; margin-bottom:16px;">H1 — Fotografie</div>
+            <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:8px; margin-bottom:8px;">
+              <div class="b b-img" style="height:100px;"><span>ramen</span></div>
+              <div class="b b-img" style="height:100px;"><span>hovězí maso</span></div>
+              <div class="b b-img" style="height:100px;"><span>phở</span></div>
+              <div class="b b-img" style="height:100px;"><span>doenjang jjigae</span></div>
+              <div class="b b-img" style="height:100px;"><span>maki losos</span></div>
+              <div class="b b-img" style="height:100px;"><span>uramaki</span></div>
+              <div class="b b-img" style="height:100px;"><span>sushi set</span></div>
+              <div class="b b-img" style="height:100px;"><span>gunkan</span></div>
+              <div class="b b-img" style="height:100px;"><span>mix maki</span></div>
+              <div class="b b-img" style="height:100px;"><span>chobotnice</span></div>
+              <div class="b b-img" style="height:100px;"><span>udon</span></div>
+              <div class="b b-img" style="height:100px;"><span>tempura krevety</span></div>
+              <div class="b b-img" style="height:100px;"><span>ebi furai</span></div>
+              <div class="b b-img" style="height:100px;"><span>tonkatsu</span></div>
+              <div class="b b-img" style="height:100px;"><span>nudle jar. cib.</span></div>
+            </div>
+            <div style="font-size:7.5px; color:#2a2a2a; text-align:right;">15 fotografií pokrmů · formát .webp · s
+              popisky alt</div>
+          </div>
+          <div class="b b-footer"
+            style="height:38px; border-left:none; border-right:none; border-bottom:none; flex-direction:column;">
+            <span>Copyright © 2026 Jakub Plecháč</span><span
+              style="font-size:7px; color:#222; margin-top:2px;">Background by azzzya · [Logo]</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="device-col">
+      <div class="device-name">Tablet</div>
+      <div class="device-px">768 – 927 px</div>
+      <div class="frame frame-tablet">
+        <div class="col gap2">
+          <div class="row" style="height:52px; border-bottom:1px dashed #222;">
+            <div class="b b-logo"
+              style="width:130px; height:52px; flex-shrink:0; border-top:none; border-left:none; border-bottom:none; border-right:1px dashed #2a2a2a; font-size:13px;">
+              BANZAI</div>
+            <div class="b b-nav"
+              style="flex:1; height:52px; border:none; font-size:8px; display:flex; align-items:center; justify-content:center; gap:12px;">
+              <span>Menu</span><span>Dezerty</span><span>Nápoje</span><span
+                style="color:#bc212e;">Foto</span><span>Kontakty</span>
+            </div>
+          </div>
+          <div style="width:90%; margin:0 auto; padding:14px 0 18px; display:flex; flex-direction:column; gap:0;">
+            <div class="b b-h1" style="height:38px; margin-bottom:12px; font-size:9px;">H1 — Fotografie</div>
+            <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:7px; margin-bottom:6px;">
+              <div class="b b-img" style="height:82px;"><span>foto</span></div>
+              <div class="b b-img" style="height:82px;"><span>foto</span></div>
+              <div class="b b-img" style="height:82px;"><span>foto</span></div>
+              <div class="b b-img" style="height:82px;"><span>foto</span></div>
+              <div class="b b-img" style="height:82px;"><span>foto</span></div>
+              <div class="b b-img" style="height:82px;"><span>foto</span></div>
+              <div class="b b-img" style="height:82px;"><span>foto</span></div>
+              <div class="b b-img" style="height:82px;"><span>foto</span></div>
+              <div class="b b-img" style="height:82px;"><span>foto</span></div>
+              <div class="b b-img" style="height:82px;"><span>foto</span></div>
+              <div class="b b-img" style="height:82px;"><span>foto</span></div>
+              <div class="b b-img" style="height:82px;"><span>foto</span></div>
+              <div class="b b-img" style="height:82px;"><span>foto</span></div>
+              <div class="b b-img" style="height:82px;"><span>foto</span></div>
+              <div class="b b-img" style="height:82px;"><span>foto</span></div>
+            </div>
+          </div>
+          <div class="b b-footer"
+            style="height:32px; border-left:none; border-right:none; border-bottom:none; font-size:7.5px;">Copyright ©
+            2026 · [Logo]</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="device-col">
+      <div class="device-name">Mobil</div>
+      <div class="device-px">do 767 px</div>
+      <div class="frame frame-mobile">
+        <div class="col gap2">
+          <div class="row"
+            style="height:46px; border-bottom:1px dashed #222; align-items:center; justify-content:space-between; padding:0 10px;">
+            <div class="b b-logo" style="width:76px; height:30px; font-size:10px; border-color:#5a1018; flex-shrink:0;">
+              BANZAI</div>
+            <div class="b b-ham" style="width:32px; height:30px; flex-shrink:0;">☰</div>
+          </div>
+          <div style="padding:10px; display:flex; flex-direction:column; gap:0;">
+            <div class="b b-h1" style="height:34px; margin-bottom:10px; font-size:7.5px;">H1 — Fotografie</div>
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:6px;">
+              <div class="b b-img" style="height:68px;"><span>foto</span></div>
+              <div class="b b-img" style="height:68px;"><span>foto</span></div>
+              <div class="b b-img" style="height:68px;"><span>foto</span></div>
+              <div class="b b-img" style="height:68px;"><span>foto</span></div>
+              <div class="b b-img" style="height:68px;"><span>foto</span></div>
+              <div class="b b-img" style="height:68px;"><span>foto</span></div>
+              <div class="b b-img" style="height:68px;"><span>foto</span></div>
+              <div class="b b-img" style="height:68px;"><span>foto</span></div>
+              <div class="b b-img" style="height:68px;"><span>foto</span></div>
+              <div class="b b-img" style="height:68px;"><span>foto</span></div>
+              <div class="b b-img" style="height:68px;"><span>foto</span></div>
+              <div class="b b-img" style="height:68px;"><span>foto</span></div>
+              <div class="b b-img" style="height:68px;"><span>foto</span></div>
+              <div class="b b-img" style="height:68px;"><span>foto</span></div>
+              <div class="b b-img" style="height:68px;"><span>foto</span></div>
+            </div>
+          </div>
+          <div class="b b-footer"
+            style="height:26px; border-left:none; border-right:none; border-bottom:none; font-size:7px;">© 2026 · [Logo]
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- ④ KONTAKTY -->
+  <div class="device-row" id="contact">
+
+    <div class="device-col">
+      <div class="device-name">Desktop</div>
+      <div class="device-px">1200 px +</div>
+      <div class="frame frame-desktop">
+        <div class="col gap2">
+          <div class="row" style="height:58px; border-bottom:1px dashed #222;">
+            <div class="b b-logo"
+              style="width:160px; height:58px; flex-shrink:0; border-top:none; border-left:none; border-bottom:none; border-right:1px dashed #2a2a2a;">
+              BANZAI</div>
+            <div class="b b-nav"
+              style="flex:1; height:58px; border:none; display:flex; align-items:center; justify-content:center; gap:28px;">
+              <span>Menu ▾</span><span>Dezerty</span><span>Nápoje ▾</span><span>Fotografie</span><span
+                style="color:#bc212e;">Kontakty ●</span>
+            </div>
+          </div>
+          <div style="width:60%; margin:0 auto; padding:20px 0 24px; display:flex; flex-direction:column; gap:0;">
+            <div class="b b-h1" style="height:44px; margin-bottom:16px;">H1 — Kontakty</div>
+
+            <div class="b b-h3" style="height:26px; margin-bottom:8px;">H3 — Otevírací doba</div>
+            <div class="b b-text" style="height:20px; margin-bottom:2px;">Pondělí · 9–21</div>
+            <div class="b b-text" style="height:20px; margin-bottom:2px;">Úterý · 9–21</div>
+            <div class="b b-text" style="height:20px; margin-bottom:2px;">Středa · 9–21</div>
+            <div class="b b-text" style="height:20px; margin-bottom:2px;">Čtvrtek · 9–21</div>
+            <div class="b b-text" style="height:20px; margin-bottom:2px;">Pátek · 9–21</div>
+            <div class="b b-text" style="height:20px; margin-bottom:2px;">Sobota · zavřeno</div>
+            <div class="b b-text" style="height:20px; margin-bottom:14px;">Neděle · zavřeno</div>
+
+            <div class="b b-h3" style="height:26px; margin-bottom:8px;">H3 — Adresa</div>
+            <div class="b b-text" style="height:20px; margin-bottom:2px;">Restaurace Banzai</div>
+            <div class="b b-text" style="height:20px; margin-bottom:2px;">Krakonošovo náměstí 118</div>
+            <div class="b b-text" style="height:20px; margin-bottom:14px;">541 01 Trutnov</div>
+
+            <div class="b b-h3" style="height:26px; margin-bottom:8px;">H3 — Telefon a email</div>
+            <div class="b b-text" style="height:20px; margin-bottom:2px;">737 428 456</div>
+            <div class="b b-text" style="height:20px; margin-bottom:14px;">info@banzai.cz</div>
+
+            <div class="b b-h3" style="height:26px; margin-bottom:10px;">H3 — Napište nám (formulář)</div>
+            <div class="b b-form" style="height:36px; margin-bottom:6px;">[ Jméno a příjmení ]</div>
+            <div class="b b-form" style="height:36px; margin-bottom:6px;">[ E-mailová adresa ]</div>
+            <div class="b b-form" style="height:100px; margin-bottom:10px; align-items:flex-start; padding:8px;">[ Vaše
+              zpráva ]</div>
+            <div class="b b-cta" style="height:38px; width:160px;">Odeslat zprávu</div>
+          </div>
+          <div class="b b-footer"
+            style="height:38px; border-left:none; border-right:none; border-bottom:none; flex-direction:column;">
+            <span>Copyright © 2026 Jakub Plecháč</span><span
+              style="font-size:7px; color:#222; margin-top:2px;">Background by azzzya · [Logo]</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="device-col">
+      <div class="device-name">Tablet</div>
+      <div class="device-px">768 – 927 px</div>
+      <div class="frame frame-tablet">
+        <div class="col gap2">
+          <div class="row" style="height:52px; border-bottom:1px dashed #222;">
+            <div class="b b-logo"
+              style="width:130px; height:52px; flex-shrink:0; border-top:none; border-left:none; border-bottom:none; border-right:1px dashed #2a2a2a; font-size:13px;">
+              BANZAI</div>
+            <div class="b b-nav"
+              style="flex:1; height:52px; border:none; font-size:8px; display:flex; align-items:center; justify-content:center; gap:12px;">
+              <span>Menu</span><span>Dezerty</span><span>Nápoje</span><span>Foto</span><span
+                style="color:#bc212e;">Kontakty</span>
+            </div>
+          </div>
+          <div style="width:85%; margin:0 auto; padding:14px 0 18px; display:flex; flex-direction:column; gap:0;">
+            <div class="b b-h1" style="height:38px; margin-bottom:12px; font-size:9px;">H1 — Kontakty</div>
+            <div class="b b-h3" style="height:22px; margin-bottom:6px; font-size:8px;">Otevírací doba</div>
+            <div class="b b-text"
+              style="height:80px; margin-bottom:10px; font-size:7.5px; flex-direction:column; align-items:flex-start; padding:8px; gap:3px; color:#3a3a3a;">
+              <span>Po–Pá: 9:00–21:00</span><span style="color:#2a2a2a;">So / Ne: zavřeno</span>
+            </div>
+            <div class="b b-h3" style="height:22px; margin-bottom:6px; font-size:8px;">Adresa</div>
+            <div class="b b-text"
+              style="height:56px; margin-bottom:10px; font-size:7.5px; flex-direction:column; align-items:flex-start; padding:8px; gap:3px; color:#3a3a3a;">
+              <span>Restaurace Banzai</span><span>Krakonošovo nám. 118</span><span>541 01 Trutnov</span>
+            </div>
+            <div class="b b-h3" style="height:22px; margin-bottom:6px; font-size:8px;">Telefon a email</div>
+            <div class="b b-text"
+              style="height:36px; margin-bottom:10px; font-size:7.5px; color:#3a3a3a; flex-direction:column;"><span>737
+                428 456</span><span>info@banzai.cz</span></div>
+            <div class="b b-h3" style="height:22px; margin-bottom:6px; font-size:8px;">Napište nám</div>
+            <div class="b b-form" style="height:30px; margin-bottom:5px; font-size:7.5px;">[ Jméno ]</div>
+            <div class="b b-form" style="height:30px; margin-bottom:5px; font-size:7.5px;">[ E-mail ]</div>
+            <div class="b b-form"
+              style="height:80px; margin-bottom:8px; font-size:7.5px; align-items:flex-start; padding:8px;">[ Zpráva ]
+            </div>
+            <div class="b b-cta" style="height:32px; width:130px; font-size:8px;">Odeslat zprávu</div>
+          </div>
+          <div class="b b-footer"
+            style="height:32px; border-left:none; border-right:none; border-bottom:none; font-size:7.5px;">Copyright ©
+            2026 · [Logo]</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="device-col">
+      <div class="device-name">Mobil</div>
+      <div class="device-px">do 767 px</div>
+      <div class="frame frame-mobile">
+        <div class="col gap2">
+          <div class="row"
+            style="height:46px; border-bottom:1px dashed #222; align-items:center; justify-content:space-between; padding:0 10px;">
+            <div class="b b-logo" style="width:76px; height:30px; font-size:10px; border-color:#5a1018; flex-shrink:0;">
+              BANZAI</div>
+            <div class="b b-ham" style="width:32px; height:30px; flex-shrink:0;">☰</div>
+          </div>
+          <div style="padding:10px; display:flex; flex-direction:column; gap:0;">
+            <div class="b b-h1" style="height:34px; margin-bottom:10px; font-size:7.5px;">H1 — Kontakty</div>
+            <div class="b b-h3" style="height:18px; margin-bottom:4px; font-size:7.5px;">Otevírací doba</div>
+            <div class="b b-text"
+              style="height:56px; margin-bottom:8px; font-size:7px; flex-direction:column; align-items:flex-start; padding:6px; gap:2px; color:#3a3a3a;">
+              <span>Po–Pá: 9:00–21:00</span><span style="color:#2a2a2a;">So/Ne: zavřeno</span>
+            </div>
+            <div class="b b-h3" style="height:18px; margin-bottom:4px; font-size:7.5px;">Adresa</div>
+            <div class="b b-text"
+              style="height:46px; margin-bottom:8px; font-size:7px; flex-direction:column; align-items:flex-start; padding:6px; gap:2px; color:#3a3a3a;">
+              <span>Krakonošovo nám. 118</span><span>541 01 Trutnov</span>
+            </div>
+            <div class="b b-h3" style="height:18px; margin-bottom:4px; font-size:7.5px;">Telefon a email</div>
+            <div class="b b-text"
+              style="height:32px; margin-bottom:8px; font-size:7px; color:#3a3a3a; flex-direction:column;"><span>737 428
+                456</span><span>info@banzai.cz</span></div>
+            <div class="b b-h3" style="height:18px; margin-bottom:4px; font-size:7.5px;">Napište nám</div>
+            <div class="b b-form" style="height:26px; margin-bottom:4px; font-size:7px;">[ Jméno ]</div>
+            <div class="b b-form" style="height:26px; margin-bottom:4px; font-size:7px;">[ E-mail ]</div>
+            <div class="b b-form"
+              style="height:70px; margin-bottom:6px; font-size:7px; align-items:flex-start; padding:6px;">[ Zpráva ]
+            </div>
+            <div class="b b-cta" style="height:28px; font-size:7.5px;">Odeslat zprávu</div>
+          </div>
+          <div class="b b-footer"
+            style="height:26px; border-left:none; border-right:none; border-bottom:none; font-size:7px;">© 2026 · [Logo]
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- LEGENDA -->
+  <div class="legend">
+    <h3>Legenda</h3>
+    <div class="lg">
+      <div class="li">
+        <div class="sw" style="background:#180608; border-color:#5a1018;"></div>Logo (BANZAI)
+      </div>
+      <div class="li">
+        <div class="sw" style="background:#141414; border-color:#262626;"></div>Navigační lišta
+      </div>
+      <div class="li">
+        <div class="sw" style="background:#141414; border-color:#3a3a3a;"></div>Hamburger menu (mobil)
+      </div>
+      <div class="li">
+        <div class="sw" style="background:#1c0608; border-color:#bc212e;"></div>H1 – Nadpis stránky
+      </div>
+      <div class="li">
+        <div class="sw" style="background:#181818; border-color:#303030;"></div>H2 – Nadpis sekce
+      </div>
+      <div class="li">
+        <div class="sw" style="background:#161616; border-color:#2a2a2a;"></div>H3 – Podnadpis
+      </div>
+      <div class="li">
+        <div class="sw" style="background:#191919; border-color:#272727;"></div>Textový obsah / název pokrmu
+      </div>
+      <div class="li">
+        <div class="sw" style="background:#170508; border-color:#4a0f14;"></div>Cena pokrmu
+      </div>
+      <div class="li">
+        <div class="sw" style="background:#1a1a1a; border-color:#343434;"></div>Fotografie (.webp)
+      </div>
+      <div class="li">
+        <div class="sw" style="background:#120406; border-color:#4a0e14;"></div>Kotevní navigace (anchory)
+      </div>
+      <div class="li">
+        <div class="sw" style="background:#161616; border-color:#2a2a2a;"></div>Formulářové pole
+      </div>
+      <div class="li">
+        <div class="sw" style="background:#bc212e; border:none;"></div>CTA tlačítko (Odeslat)
+      </div>
+      <div class="li">
+        <div class="sw" style="background:#0c0c0c; border-color:#1a1a1a;"></div>Patička (footer)
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function show(id, btn) {
+      document.querySelectorAll('.device-row').forEach(r => r.classList.remove('active'));
+      document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+      btn.classList.add('active');
+    }
+  </script>
+</body>
+
+</html>

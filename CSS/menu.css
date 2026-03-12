@@ -49,6 +49,7 @@ aside p a:hover {
 
 .title-first {
   margin: 0em !important;
+  padding: 0em !important;
 }
 
 .menu-day {
@@ -64,6 +65,11 @@ aside p a:hover {
 .main-container img {
   width: 100%;
   margin-bottom: 2em;
+}
+
+.menu-day h2 {
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 .dropdown-menu {

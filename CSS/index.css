@@ -33,7 +33,7 @@ html {
   max-width: 100%;
   overflow-x: hidden;
   background-image: url(../assets/images/main-background.jpg);
-  object-fit: 100px 10px;
+  background-attachment: fixed;
 }
 
 .main-container h1 {
@@ -74,8 +74,8 @@ html {
   margin-bottom: 1.5em;
 }
 
-.menu-day {
-  margin-bottom: 2em;
+.menu-day h2 {
+  font-size: 1.25em;
 }
 
 .menu-day p {
@@ -146,6 +146,11 @@ cite a {
 
 .icon-detail {
   margin: 0px !important;
+}
+
+.hidden-tag {
+  margin: 0px !important;
+  padding: 0px !important;
 }
 
 @media screen and (max-width: 1700px) {

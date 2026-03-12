@@ -1,0 +1,58 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #0e0e0e; font-family: 'Courier New', monospace; color: #ccc; padding: 32px 24px 60px; }
+
+.page-header { text-align: center; margin-bottom: 40px; }
+.page-header h1 { font-size: 26px; letter-spacing: 6px; color: #fff; text-transform: uppercase; }
+.page-header .sub { color: #bc212e; font-size: 11px; letter-spacing: 3px; margin-top: 6px; }
+
+.tabs { display: flex; justify-content: center; gap: 6px; flex-wrap: wrap; margin-bottom: 40px; }
+.tab { background: #1a1a1a; border: 1px solid #333; color: #888; padding: 9px 20px; font-family: 'Courier New', monospace; font-size: 11px; letter-spacing: 1.5px; cursor: pointer; text-transform: uppercase; transition: all .2s; }
+.tab:hover { border-color: #bc212e; color: #ddd; }
+.tab.active { background: #bc212e; border-color: #bc212e; color: #fff; }
+
+.device-row { display: none; }
+.device-row.active { display: flex; gap: 50px; justify-content: center; align-items: flex-start; flex-wrap: wrap; }
+
+.device-col { display: flex; flex-direction: column; align-items: center; gap: 8px; }
+.device-name { font-size: 11px; color: #bc212e; letter-spacing: 2px; text-transform: uppercase; }
+.device-px { font-size: 9px; color: #444; margin-top: -6px; }
+
+.frame { border: 2px solid #333; background: #141414; }
+.frame-desktop { width: 640px; }
+.frame-tablet  { width: 380px; }
+.frame-mobile  { width: 210px; }
+
+/* base box */
+.b { display:flex; align-items:center; justify-content:center; text-align:center; font-size:9px; color:#4a4a4a; border:1px dashed #282828; background:#191919; width:100%; position:relative; padding:4px; }
+
+/* variants */
+.b-logo  { background:#180608; border-color:#5a1018; color:#bc212e; font-size:15px; font-weight:bold; letter-spacing:4px; }
+.b-nav   { background:#141414; border-color:#262626; color:#4a4a4a; font-size:9px; }
+.b-ham   { background:#141414; border-color:#3a3a3a; color:#777; font-size:18px; }
+.b-h1    { background:#1c0608; border-color:#bc212e; color:#cc3344; font-size:10px; letter-spacing:1px; }
+.b-h2    { background:#181818; border-color:#303030; color:#666; font-size:9px; }
+.b-h3    { background:#161616; border-color:#2a2a2a; color:#555; font-size:8px; }
+.b-text  { background:#191919; border-color:#272727; color:#3a3a3a; font-size:8px; line-height:1.4; }
+.b-price { background:#170508; border-color:#4a0f14; color:#8a2030; font-size:8px; }
+.b-img   { background:#1a1a1a; border-color:#343434; overflow:hidden; }
+.b-img::before { content:''; position:absolute; inset:0; background: linear-gradient(to bottom right, transparent calc(50% - .5px), #2a2a2a calc(50% - .5px), #2a2a2a calc(50% + .5px), transparent calc(50% + .5px)), linear-gradient(to bottom left, transparent calc(50% - .5px), #2a2a2a calc(50% - .5px), #2a2a2a calc(50% + .5px), transparent calc(50% + .5px)); }
+.b-img span { position:relative; z-index:1; color:#3a3a3a; font-size:8px; }
+.b-cta   { background:#bc212e; border:none; color:#fff; font-size:9px; font-weight:bold; }
+.b-form  { background:#161616; border-color:#2a2a2a; color:#3a3a3a; font-size:8px; justify-content:flex-start; padding-left:10px; }
+.b-sep   { background:#0e0e0e; border-color:#1a1a1a; color:#252525; font-size:7px; height:12px; }
+.b-footer{ background:#0c0c0c; border-color:#1a1a1a; color:#2a2a2a; font-size:8px; }
+.b-anchor{ background:#120406; border-color:#4a0e14; color:#6a1a24; font-size:7.5px; }
+
+.row { display:flex; width:100%; }
+.col { display:flex; flex-direction:column; width:100%; }
+.gap2 { gap:2px; }
+.gap4 { gap:4px; }
+
+.nb { border:none !important; }
+
+/* legend */
+.legend { max-width:700px; margin:50px auto 0; border:1px solid #222; background:#111; padding:22px 28px; }
+.legend h3 { font-size:10px; letter-spacing:3px; color:#bc212e; text-transform:uppercase; margin-bottom:14px; }
+.lg { display:grid; grid-template-columns:repeat(auto-fill,minmax(190px,1fr)); gap:9px; }
+.li { display:flex; align-items:center; gap:9px; font-size:10px; color:#555; }
+.sw { width:26px; height:16px; flex-shrink:0; border:1px dashed #333; }

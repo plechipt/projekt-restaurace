@@ -2,6 +2,11 @@
   display: flex;
 }
 
+.contact-left-side-items h2 {
+  font-size: 18px;
+  padding-top: 0em !important;
+}
+
 .contact-right-side {
   width: 50%;
   flex: 1;
@@ -40,7 +45,7 @@ Form
   margin-top: 2rem;
 }
 
-.contact-form-container h3 {
+.contact-form-container h2 {
   margin-bottom: 1.5rem;
 }
 
